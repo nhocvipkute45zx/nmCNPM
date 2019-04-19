@@ -1,0 +1,435 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Manages_Index_Group10</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+    <link href="css/manages.css" rel='stylesheet' type='text/css' />
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/aminate.css">
+    <link rel="stylesheet" href="css/addEditDelete.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="css/index.css">
+
+
+
+
+
+    <!-- google fonts  -->
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" href="css/manages2.css">
+    <link rel="icon" href="images/logo.ico">
+</head>
+<!-- include -->
+<script>
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /*loop through a collection of all HTML elements:*/
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+                /*make an HTTP request using the attribute value as the file name:*/
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+                        if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+                        /*remove the attribute, and call this function once more:*/
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /*exit the function:*/
+                return;
+            }
+        }
+    };
+</script>
+
+<!-- end include -->
+
+<body>
+    <div class="page-container">
+
+        <!--menu right and contain-->
+        <div class="left-content">
+            <div class="inner-content">
+                <div class="header-section">
+                    <!-- menu right -->
+                    
+                    <!-- end menu right -->
+                    <div class="clearfix"></div>
+                </div>
+
+                <!-- contain -->
+                <div class="agile-login">
+                  
+	
+		<div class="container-fluid">
+			<div class = "row">
+				
+				<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 bodyConten " style="text-align: center; padding-top: 1%" >
+					<h2 style="text-align: center; padding-bottom: 20px">Updated daily</h2>
+					<div class="container">
+						<div class="row content_1 ">
+
+                            <!-- ---------------------- -->
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
+                                    <div class="pn hoverList">
+                                    <div class="row">
+                                    <div class="heardList">
+                                      <h5 >The movie has the highest sales</h5>
+                                    </div>
+                                    </div>
+                                    <div class= "col-xs-6 col-sm-6 col-md-6 col-lg-6" style="text-align:left; padding-top:5px">
+                                        <p>
+                                        <i class="fa fa-money"></i>
+                                            5.650$
+                                        </p>
+                                  </div>
+                                    <div>
+                                        <img src="images/echua18.jpg" width="150" height="200">
+    
+                                    </div>
+                                    </div>
+    
+                              </div>
+							<!-- --------------------------------------------------------- -->
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
+								<div class="pn hoverList">
+								<div class="row">
+								<div class="heardList">
+								  <h5 >Most watched movies</h5>
+								</div>
+								</div>
+								<div class= "col-xs-6 col-sm-6 col-md-6 col-lg-6" style="text-align:left; padding-top:5px">
+									<p>
+									<i class="fa fa-heart"></i>
+										127
+									</p>
+							  </div>
+								<div>
+									<img src="images/em-gai-mua-ban-tinh-ca-khac-khoai-cua-nhung-moi-tinh-don-phuong-thoi-thanh-xuan-tuoi-dep-2156342.jpg" width="150" height="200">
+
+								</div>
+								</div>
+
+						  </div>
+							<!-- --------------------------------------------------------- -->
+						  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 " style="padding-bottom: 3%">
+							  <div class="pn hoverList">
+							  <div class="row ">
+							  <div class= "col-xs-5 col-sm-6 col-md-5 col-lg-5 ">
+								  <div class = "heardList_1">
+								  <p style="font-size: 12px">Ho Chi Minh city</p>
+								  </div>
+								  </div>
+								  <div class= "col-xs-6 col-sm-6 col-md-6 col-lg-6" >
+									  <div class = "heardList_1">
+								  		<p style="font-size: 13px">Mon 2/01/2019</p>
+									</div>
+							  </div>
+							  </div>
+								<div class="weather">
+									<img src="images/anhSaiGon.jpg">
+								</div>
+							  
+							  <div class= "col-xs-7 col-sm-7 col-md-7 col-lg-7 wheather">
+								  <h4><strong>30 ºC</strong></h4>
+								  <h6>MAX 31 ºC</h6>
+								  <h6>MIN 28 ºC</h6>
+								  </div>
+								  <div class= "col-xs-5 col-sm-5 col-md-5 col-lg-5 wheather">
+						
+										<h4><i class="fa fa-cloud"></i></h4>
+										<h6>ít mây</h6>
+										<h5><small id="date-access-2">13:43:55.Pm</small></h5>
+								
+							  	</div>
+							  </div>
+						</div>
+							<!-- --------------------------------------------------------- -->
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
+                                <div class="pn hoverList">
+                                <div class="row ">
+                                <div class="heardList">
+                                    <h5>Data dropbox</h5>
+
+                                
+                                
+                               
+                                  <img src="images/datadropbox1.PNG" width="220" height="190">
+                               
+                             </div>
+                            
+                    </div></div></div>
+                             <!-- ----------------------------------------------------------->	
+                             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
+                                    <div class="pn hoverList">
+                                    <div class="row ">
+                                    <div class="heardList">
+                                        <h5>Server status</h5>
+    
+                                    
+                                    
+                                   
+                                      <img src="images/server.PNG" width="220" height="190">
+                                   
+                                 </div>
+                                
+                        </div></div></div>
+							<!-- --------------------------------------------------------- -->
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
+                                <div class="pn hoverList">
+                                <div class="row ">
+                                <div class="heardList">
+                                    <h5>Revenue</h5>
+
+                                
+                                
+                               
+                                  <img src="images/thunhap1.PNG" width="220" height="190">
+                               
+                             </div>
+                            
+                    </div></div></div>
+                                                        <!-- ........................................ -->
+
+						</div>
+						
+						
+					</div>
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 QuanTri" >
+
+					<div><h3>Administrators</h3></div>
+					
+					<div class="desc row" >
+                      	<div class="thumb col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                      		<img class="img-circle" src="images/ThaoLe.jpg" width="35px" height="35px" >
+                      	</div>
+                      	<div class="details col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                      		<p><a href="#"><strong>Thảo Lê</strong></a><br>
+                      		   <muted><i>Online</i></muted>
+                      		</p>
+                      	</div>
+                      </div>
+					
+					<div class="desc row" >
+                      	<div class="thumb col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                      		<img class="img-circle" src="images/TangTuyen.jpg" width="35px" height="35px" >
+                      	</div>
+                      	<div class="details col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                      		<p><a href="#"><strong>Tăng Tuyền</strong></a><br>
+                      		   <muted><i>Online</i></muted>
+                      		</p>
+                      	</div>
+                      </div>
+					
+					<div class="desc row" >
+                      	<div class="thumb col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                      		<img class="img-circle" src="images/MinhXuan.jpg" width="35px" height="35px" >
+                      	</div>
+                      	<div class="details col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                      		<p><a href="#"><strong>Minh Xuân</strong></a><br>
+                      		   <muted><i>Online</i></muted>
+                      		</p>
+                      	</div>
+                      </div>
+					<div class="desc row" >
+                      	<div class="thumb col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                      		<img class="img-circle" src="images/khoa.jpg" width="35px" height="35px" >
+                      	</div>
+                      	<div class="details col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                      		<p><a href="#"><strong>Đăng Khoa</strong></a><br>
+                      		   <muted><i>Offline</i></muted>
+                      		</p>
+                      	</div>
+                      </div>
+	
+						
+						
+					</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="height: 40px"></div>
+					
+				</div>
+            </div>
+
+                </div>
+                <!-- end contain -->
+            </div>
+        </div>
+
+        <!---end ....menu right and contain-->
+
+        <!--sidebar-menu-->
+        <div class="sidebar-menu">
+            <header class="logo">
+                <a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span>
+                </a> <a href="#" style="text-decoration: none;"> <span id="logo">
+                        <h1>Admin</h1>
+                    </span>
+                </a>
+            </header>
+            <div style="border-top: 1px solid rgba(69, 74, 84, 0.7)"></div>
+            <!--/down-->
+            <div class="down">
+                <center> <a href="#">
+                        <img src="images/download.png" class="img-responsive lgo" alt="Image">
+                    </a></center>
+               
+            </div>
+            <!--//down-->
+
+
+            <!--menu-->
+            <div class="menu">
+                    <ul id="menu">
+                        <li><a href="ticket.html" title="Ticket" style="text-decoration: none;"><i class="fa fa-ticket"></i> <span>Tickets</span></a></li>
+                        <li><a href="statistic.html" title="Statistic" style="text-decoration: none;"><i class="fa fa-bar-chart"></i> <span>
+                                    Statistic</span></a></li>
+                        <li><a href="equipment.html" title="Equipment" style="text-decoration: none;"><i class="fa fa-table"></i>
+                                <span>Equipment</span></a></li>
+                                <li><a href="movie.html" title="Movie" style="text-decoration: none;"><i class="fa fa-film"></i>
+                                    <span>Movie</span></a></li>
+                        <li><a href="#" style="text-decoration: none;"> <i class="fa fa-user"></i><span>User</span> <span
+                                    class="fa fa-angle-right" style="float: right"></span></a>
+                            <ul>
+                                <li><a href="customer.html" title="Customer"><i class="lnr lnr-map"></i> Customer</a></li>
+                                <li><a href="employee.html"><i class="lnr lnr-apartment"></i> Employee
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li><a title="Group page" style="text-decoration: none;" href="https://hci2018group10.azurewebsites.net">
+                                <i class="fa fa-users"></i><span>Group page</span></a></li>
+    
+                    </ul>
+                </div>
+                <!--//menu-->
+    
+
+        </div>
+        <!--//sidebar-menu-->
+
+       
+        <div class="clearfix"></div>
+    </div>
+
+
+    <script>
+        var toggle = true;
+
+        $(".sidebar-icon").click(function () {
+            if (toggle) {
+                $(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
+                $("#menu span").css({ "position": "absolute" });
+            } else {
+                $(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
+                setTimeout(function () {
+                    $("#menu span").css({ "position": "relative" });
+                }, 400);
+            }
+
+            toggle = !toggle;
+        });
+    </script>
+
+    <!-- Xu ly user -->
+    <script>
+
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+    
+            function myFunction2() {
+                document.getElementById("myDropdown2").classList.toggle("show1");
+            }
+            function myFunction3() {
+                document.getElementById("myDropdown3").classList.toggle("show2");
+            }
+    
+            window.onclick = function (e) {
+                // if (e.target == md[0]) {
+                //     md[0].style.display = 'none';
+    
+    
+                // }
+    
+                if (!e.target.matches('.dropbtn')) {
+    
+                    var dropdowns = document.getElementsByClassName("dropdown-menu1");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+    
+    
+                if (!e.target.matches('.dropbtn3')) {
+    
+                    var dropdowns = document.getElementsByClassName("dropdown-menuMail");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show2')) {
+                            openDropdown.classList.remove('show2');
+                        }
+                    }
+                }
+    
+    
+                if (!e.target.matches('.dropbtn2')) {
+    
+                    var dropdowns = document.getElementsByClassName("dropdown-menubell");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show1')) {
+                            openDropdown.classList.remove('show1');
+                        }
+                    }
+                }
+            }
+    
+        </script>
+    
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+    <!-- <script>
+    includeHTML();
+    </script> -->
+
+</body>
+
+</html>
