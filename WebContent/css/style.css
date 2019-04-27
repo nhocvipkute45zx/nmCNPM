@@ -522,5 +522,9 @@ width: 100%
         padding: 25px 8px;
     }
 }
+.agile-field-txt p {
+    color: #ffffff;
+
+}
 
 /*--//responsive--*/
