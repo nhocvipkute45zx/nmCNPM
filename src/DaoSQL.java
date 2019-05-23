@@ -28,7 +28,7 @@ public class DaoSQL {
 	}
 
 	public boolean checkMailexit(String email) {
-		String sql = "select MaUser, Email from [dbo].[User] where Email = ?";
+		String sql = "select MaUser, Email from Users where Email = ?";
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setString(1, email);
@@ -41,7 +41,7 @@ public class DaoSQL {
 				
 	}
 	public boolean checkSDTexit(String sdt) {
-		String sql = "select MaUser, Sđt from [dbo].[User] where Sđt = ?";
+		String sql = "select MaUser, Sđt from Users where Sđt = ?";
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setString(1, sdt);
@@ -55,7 +55,7 @@ public class DaoSQL {
 	}
 
 	public boolean add(User2 cus) {
-		String sql = "INSERT INTO [dbo].[User](TenUser, Email, Sđt, Pass) VALUES(?,?,?,?)";
+		String sql = "INSERT INTO Users(TenUser, Email, Sđt, Pass) VALUES(?,?,?,?)";
 		try {
 			PreparedStatement pr = con.prepareStatement(sql);
 			pr.setString(1, cus.getTenUser());
@@ -68,10 +68,10 @@ public class DaoSQL {
 		}
 		return false;
 	}
-
+// kiem tra email
 	public boolean checkUserEmail(String email, String password) {
 		boolean b = false;
-		String sql = "SELECT * FROM [dbo].[User] WHERE email='" + email + "' AND Pass='" + password + "'";
+		String sql = "SELECT * FROM Users WHERE email='" + email + "' AND Pass='" + password + "'";
 		try {
 			PreparedStatement pr = con.prepareStatement(sql);
 			ResultSet result = pr.executeQuery();
@@ -81,9 +81,10 @@ public class DaoSQL {
 		}
 		return b;
 	}
+	//kiem tra sđt
 	public boolean checkUserSdt(String sdt, String password) {
 		boolean b = false;
-		String sql = "SELECT * FROM [dbo].[User] WHERE Sđt='" + sdt + "' AND Pass='" + password + "'";
+		String sql = "SELECT * FROM Users WHERE Sđt='" + sdt + "' AND Pass='" + password + "'";
 		try {
 			PreparedStatement pr = con.prepareStatement(sql);
 			ResultSet result = pr.executeQuery();
