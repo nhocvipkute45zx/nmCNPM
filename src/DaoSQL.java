@@ -15,6 +15,7 @@ public class DaoSQL {
 	private static User2 cus = new User2();
 
 	public DaoSQL() {
+		//kết nối data base
 		try {
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 			String connectionUrl = "jdbc:sqlserver://localhost:1433;databaseName=nmCNPM;integratedSecurity=true;";
@@ -26,7 +27,7 @@ public class DaoSQL {
 		}
 
 	}
-
+//kiểm tra mail có tồn tại
 	public boolean checkMailexit(String email) {
 		String sql = "select MaUser, Email from Users where Email = ?";
 		try {
@@ -40,6 +41,7 @@ public class DaoSQL {
 			return false;
 				
 	}
+	//kiểm tra số điện thoại có tồn tại
 	public boolean checkSDTexit(String sdt) {
 		String sql = "select MaUser, Sđt from Users where Sđt = ?";
 		try {
@@ -53,7 +55,7 @@ public class DaoSQL {
 			return false;
 				
 	}
-
+//thêm một người dùng mới vào
 	public boolean add(User2 cus) {
 		String sql = "INSERT INTO Users(TenUser, Email, Sđt, Pass) VALUES(?,?,?,?)";
 		try {
@@ -68,7 +70,7 @@ public class DaoSQL {
 		}
 		return false;
 	}
-// kiem tra email
+// kiem tra email có trùng khớp với password
 	public boolean checkUserEmail(String email, String password) {
 		boolean b = false;
 		String sql = "SELECT * FROM Users WHERE email='" + email + "' AND Pass='" + password + "'";
@@ -81,7 +83,7 @@ public class DaoSQL {
 		}
 		return b;
 	}
-	//kiem tra sđt
+	//kiem tra số điẹn thoại có trùng khớp với password
 	public boolean checkUserSdt(String sdt, String password) {
 		boolean b = false;
 		String sql = "SELECT * FROM Users WHERE Sđt='" + sdt + "' AND Pass='" + password + "'";
