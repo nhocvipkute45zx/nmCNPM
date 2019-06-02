@@ -24,6 +24,7 @@ public class LoginGoogleServlet extends HttpServlet {
 
         try {
             String idToken = req.getParameter("id_token");
+            //2.6 Phân tích chuyển đổi id_token
             GoogleIdToken.Payload payLoad = IdTokenVerifierAndParser.getPayload(idToken);
             String name = (String) payLoad.get("name");
             String email = payLoad.getEmail();
