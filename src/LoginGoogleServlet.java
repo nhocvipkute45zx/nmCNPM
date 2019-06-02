@@ -33,6 +33,7 @@ public class LoginGoogleServlet extends HttpServlet {
 
             HttpSession session = req.getSession(true);
             session.setAttribute("userName", name);
+            //2.7 chuyển tới trang chủ , hiển thị thông tin
             req.getServletContext()
                .getRequestDispatcher("/index.html").forward(req, resp);
 
