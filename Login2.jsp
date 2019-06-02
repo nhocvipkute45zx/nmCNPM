@@ -69,6 +69,7 @@
 					<label style="padding-left: 44%; padding-top: 1%">Hoặc</label>
 				</div>
 				<div class="form-end test">
+					//2.1 gọi API google
 					<a class=" g-signin2" data-onsuccess="onSignIn" data-longtitle="false" data-width="360" data-height="45"
 						type=""> Sign In </a>
 				</div>
@@ -93,6 +94,7 @@
 			console.log('Name: ' + profile.getName());
 			console.log('Image URL: ' + profile.getImageUrl());
 			console.log('Email: ' + profile.getEmail());
+			//2.5 Nhận id_token tử google
 			console.log('id_token: ' + googleUser.getAuthResponse().id_token);
 
 			//do not post above info to the server because that is not safe.
